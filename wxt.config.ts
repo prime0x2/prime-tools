@@ -53,12 +53,9 @@ export default defineConfig({
       browser_specific_settings: {
         gecko: {
           id: 'prime-tools@prime0x2',
-          strict_min_version: '140.0',
+          strict_min_version: '142.0',
           data_collection_permissions: { required: ['none'] },
         },
-        // Desktop-only for now; this just satisfies AMO's version check
-        // (data_collection_permissions arrived in Android 142).
-        gecko_android: { strict_min_version: '142.0' },
       },
     }),
   }),
