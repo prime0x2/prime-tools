@@ -4,6 +4,10 @@
 
 > Dim, blur or hide any part of a web page. Remembers per site. Local-only, open source.
 
+[![CI](https://github.com/prime0x2/prime-tools/actions/workflows/ci.yml/badge.svg)](https://github.com/prime0x2/prime-tools/actions/workflows/ci.yml)
+
+<img src="docs/store/02-hide-areas.png" alt="Prime Tools hiding API keys on a dashboard, with the popup open" width="760">
+
 Prime Tools is a small Chrome and Firefox extension for the moments a page shows more than you want it to: screen-sharing a dashboard with keys on it, streaming with your inbox open, or reading a blinding white page at night.
 
 - **Whole page:** dim or blur the entire page at any strength, remembered per site.
