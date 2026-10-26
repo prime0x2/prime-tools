@@ -1,8 +1,7 @@
-<img src="docs/icon.svg" alt="" width="64" height="64">
-
-# Prime Tools
-
-> Dim, blur or hide any part of a web page. Remembers per site. Local-only, open source.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/banners/hero-dark.png">
+  <img src="docs/banners/hero-light.png" alt="Prime Tools: dim, blur or hide any part of a web page. Share your screen, not your secrets." width="100%">
+</picture>
 
 [![CI](https://github.com/prime0x2/prime-tools/actions/workflows/ci.yml/badge.svg)](https://github.com/prime0x2/prime-tools/actions/workflows/ci.yml)
 
@@ -86,6 +85,7 @@ pnpm build          # .output/chrome-mv3
 pnpm build:firefox  # .output/firefox-mv3
 pnpm zip:all        # store zips + sources zip (for AMO review)
 pnpm build:store    # store screenshots + promo tiles → docs/store/
+pnpm build:banners  # README hero + GitHub social preview → docs/banners/
 ```
 
 To bump the version, change `version` in `package.json`. WXT writes it into both manifests. Then update `CHANGELOG.md`.
