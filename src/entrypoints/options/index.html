@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prime Tools · Settings</title>
+    <meta name="manifest.open_in_tab" content="true" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header class="head">
+        <img src="/icon/48.png" alt="" width="36" height="36" />
+        <div>
+          <h1>Prime Tools</h1>
+          <p class="muted">Dim, blur or hide any part of a page. Everything stays on this device.</p>
+        </div>
+      </header>
+
+      <section class="card" aria-labelledby="sites-heading">
+        <div class="section-head">
+          <div>
+            <h2 id="sites-heading">Remembered sites</h2>
+            <p class="muted">
+              Sites where you turned on a whole-page effect. “Auto-apply” means the
+              effect is applied as soon as the page starts loading.
+            </p>
+          </div>
+          <button id="forget-all" class="btn ghost danger" type="button" hidden>Forget all</button>
+        </div>
+        <ul id="sites" class="sites"></ul>
+        <p id="sites-empty" class="empty" hidden>
+          No sites yet. Open the toolbar popup on any page and turn on Dim or Blur.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="keys-heading">
+        <div class="section-head">
+          <div>
+            <h2 id="keys-heading">Keyboard shortcuts</h2>
+            <p class="muted">Set or change these in your browser’s shortcut settings.</p>
+          </div>
+          <button id="edit-shortcuts" class="btn" type="button">Change shortcuts</button>
+        </div>
+        <dl id="keys" class="keys"></dl>
+      </section>
+
+      <section class="card" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p class="muted">
+          Version <span id="version"></span> · No accounts, no analytics, no network requests.
+          <a href="https://github.com/prime0x2/prime-tools" target="_blank" rel="noreferrer">Source code</a>
+          ·
+          <a href="https://github.com/prime0x2/prime-tools/blob/main/PRIVACY.md" target="_blank" rel="noreferrer">Privacy</a>
+        </p>
+      </section>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

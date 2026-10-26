@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prime Tools</title>
+    <meta name="manifest.default_title" content="Prime Tools — dim or blur this page" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="head">
+      <img class="logo" src="/icon/32.png" alt="" width="22" height="22" />
+      <div class="title">
+        <strong>Prime Tools</strong>
+        <span id="host" class="host"></span>
+      </div>
+      <button id="settings" class="icon-btn" type="button" title="Settings" aria-label="Settings">
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+          <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+          <path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z" />
+        </svg>
+      </button>
+    </header>
+
+    <main id="app" hidden>
+      <section class="card" aria-labelledby="page-heading">
+        <div class="row">
+          <h2 id="page-heading">Whole page</h2>
+          <label class="switch" title="Turn the effect on or off">
+            <input id="enabled" type="checkbox" role="switch" aria-labelledby="page-heading" />
+            <span aria-hidden="true"></span>
+          </label>
+        </div>
+
+        <fieldset class="seg">
+          <legend class="sr-only">Effect</legend>
+          <label><input type="radio" name="mode" value="dim" /><span>Dim</span></label>
+          <label><input type="radio" name="mode" value="blur" /><span>Blur</span></label>
+        </fieldset>
+
+        <div class="slider-head">
+          <label for="strength">Strength</label>
+          <output id="strength-value" for="strength">50%</output>
+        </div>
+        <input id="strength" type="range" min="5" max="100" step="1" value="50" />
+
+        <label id="auto-row" class="check">
+          <input id="auto" type="checkbox" />
+          <span>
+            <strong>Apply on every visit</strong>
+            <small id="auto-help"></small>
+          </span>
+        </label>
+        <p id="private-note" class="note" hidden>
+          Private window: changes affect this tab only and aren’t saved.
+        </p>
+      </section>
+
+      <section class="card" aria-labelledby="areas-heading">
+        <div class="row">
+          <h2 id="areas-heading">Areas</h2>
+          <span class="muted">Until reload</span>
+        </div>
+        <div class="grid2">
+          <button id="hide-area" class="btn" type="button" title="Drag over something to cover it">Hide area</button>
+          <button id="show-area" class="btn" type="button" title="Drag over what you want to keep; everything else is covered">Show only area</button>
+        </div>
+        <button id="clear-areas" class="btn ghost" type="button" disabled>Clear areas</button>
+      </section>
+    </main>
+
+    <p id="unsupported" class="empty" role="status" hidden></p>
+
+    <footer class="foot"><span id="shortcut"></span></footer>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Field Notes — Why we stopped shipping on Fridays</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #ffffff; color: #1d1d1f; }
+  body { font: 19px/1.65 Georgia, "Iowan Old Style", "Times New Roman", serif; }
+  .nav { display: flex; align-items: center; gap: 28px; padding: 18px 64px; border-bottom: 1px solid #eee;
+    font: 600 15px/1 system-ui, -apple-system, sans-serif; }
+  .nav .brand { font-size: 20px; letter-spacing: -0.02em; margin-right: auto; }
+  .nav span { color: #6e6e73; font-weight: 500; }
+  .nav .sub { color: #fff; background: #1d1d1f; padding: 10px 16px; border-radius: 999px; }
+  article { max-width: 720px; margin: 56px auto; padding: 0 24px; }
+  .kicker { font: 600 13px/1 system-ui, sans-serif; letter-spacing: .12em; text-transform: uppercase; color: #c2410c; }
+  h1 { font-size: 46px; line-height: 1.1; letter-spacing: -0.02em; margin: 14px 0 18px; }
+  .by { font: 15px/1.4 system-ui, sans-serif; color: #6e6e73; margin-bottom: 32px; }
+  p { margin: 0 0 22px; }
+</style>
+</head>
+<body>
+  <div class="nav"><div class="brand">Field Notes</div><span>Engineering</span><span>Design</span><span>Culture</span><div class="sub">Subscribe</div></div>
+  <article>
+    <div class="kicker">Engineering</div>
+    <h1>Why we stopped shipping on Fridays — and what we do instead</h1>
+    <div class="by">By Sam Rivera · 9 min read</div>
+    <p>For years our release train left every Friday afternoon. It felt efficient: a week of work, a clean cut, a weekend for the dust to settle. In practice, the dust settled on whoever was on call.</p>
+    <p>The fix wasn’t a rule. It was making releases boring. Small changes, behind flags, rolled out to one percent of traffic first. When a deploy is that dull, the day of the week stops mattering, and Friday becomes just another afternoon.</p>
+    <p>We started by measuring how long a change sat between merge and production. The median was four days. The worst case was three weeks, mostly because a big release bundled everything together and nobody wanted to be the one to break it.</p>
+    <p>Here is what changed, and what it cost us to get there.</p>
+  </article>
+</body>
+</html>

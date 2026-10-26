@@ -1,0 +1,10 @@
+node_modules
+.output
+.wxt
+.wxt-dev-profile
+coverage
+test-results
+playwright-report
+*.log
+.DS_Store
+web-ext.config.ts

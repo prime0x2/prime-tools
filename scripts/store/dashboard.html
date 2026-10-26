@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Orbit Console — API keys</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #f6f7f9; color: #111827; font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .shell { display: grid; grid-template-columns: 232px 1fr; min-height: 100vh; }
+  aside { background: #0f172a; color: #cbd5e1; padding: 22px 16px; }
+  aside .logo { color: #fff; font-weight: 700; font-size: 17px; margin: 0 8px 26px; display: flex; gap: 10px; align-items: center; }
+  aside .logo i { width: 22px; height: 22px; border-radius: 6px; background: linear-gradient(135deg,#6366f1,#22d3ee); display: inline-block; }
+  aside a { display: block; padding: 8px 10px; border-radius: 8px; color: inherit; text-decoration: none; margin-bottom: 2px; }
+  aside a.on { background: #1e293b; color: #fff; }
+  main { padding: 28px 40px; }
+  h1 { font-size: 24px; margin: 0 0 4px; }
+  .sub { color: #6b7280; margin-bottom: 24px; }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px; }
+  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px 18px; }
+  .card b { display: block; font-size: 24px; margin-top: 4px; }
+  .card span { color: #6b7280; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid #e5e7eb; border-radius: 12px; overflow: hidden; }
+  th, td { text-align: left; padding: 14px 18px; border-bottom: 1px solid #f1f5f9; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: #6b7280; background: #fafafa; }
+  code { font: 13px/1 ui-monospace, "SFMono-Regular", Menlo, monospace; background: #f3f4f6; padding: 5px 8px; border-radius: 6px; }
+  .tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; background: #dcfce7; color: #166534; }
+  .tag.test { background: #e0e7ff; color: #3730a3; }
+  .env { margin-top: 24px; background: #0b1020; color: #e2e8f0; border-radius: 12px; padding: 18px 20px; font: 13px/1.8 ui-monospace, Menlo, monospace; }
+  .env .k { color: #93c5fd; }
+</style>
+</head>
+<body>
+<div class="shell">
+  <aside>
+    <div class="logo"><i></i>Orbit Console</div>
+    <a>Overview</a><a>Deployments</a><a>Databases</a><a class="on">API keys</a><a>Webhooks</a><a>Billing</a><a>Settings</a>
+  </aside>
+  <main>
+    <h1>API keys</h1>
+    <div class="sub">Keys grant full access to your project. Keep them secret.</div>
+    <div class="cards">
+      <div class="card"><span>Requests today</span><b>1.24M</b></div>
+      <div class="card"><span>Active keys</span><b>3</b></div>
+      <div class="card"><span>Error rate</span><b>0.08%</b></div>
+    </div>
+    <table>
+      <tr><th>Name</th><th>Key</th><th>Mode</th><th>Last used</th></tr>
+      <tr><td>Production backend</td><td><code>orb_live_8Hq2xVd7Kp4mWz1sT9cN3bYe</code></td><td><span class="tag">live</span></td><td>2 min ago</td></tr>
+      <tr><td>Billing worker</td><td><code>orb_live_Rm5tQa2LwX8fJ0kPz6uC4nGh</code></td><td><span class="tag">live</span></td><td>1 hour ago</td></tr>
+      <tr><td>Local development</td><td><code>orb_test_Zt7Yp1nB3vQs9dKe2mWx5aLr</code></td><td><span class="tag test">test</span></td><td>yesterday</td></tr>
+    </table>
+    <div class="env">
+      <div><span class="k">ORBIT_PROJECT</span>=prj_04hn2k</div>
+      <div><span class="k">ORBIT_SECRET_KEY</span>=orb_live_8Hq2xVd7Kp4mWz1sT9cN3bYe</div>
+      <div><span class="k">DATABASE_URL</span>=postgres://app:Xk29fLmQ@db.internal:5432/main</div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

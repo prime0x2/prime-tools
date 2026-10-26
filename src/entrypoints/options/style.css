@@ -1,0 +1,157 @@
+@import "../../styles/theme.css";
+
+body {
+  margin: 0;
+  font-size: 14px;
+}
+
+.wrap {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 40px 20px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.head {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.head img {
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+h2 {
+  margin: 0 0 4px;
+  font-size: 15px;
+}
+
+p {
+  margin: 0;
+}
+
+.muted {
+  color: var(--text-dim);
+}
+
+a {
+  color: var(--accent);
+}
+
+.card {
+  padding: 18px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.section-head {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.section-head .btn {
+  flex: none;
+}
+
+.sites {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.sites li {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 12px;
+  align-items: center;
+  padding: 10px 12px;
+}
+
+.sites li + li {
+  border-top: 1px solid var(--border);
+}
+
+.site-name {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pill {
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--bg-sunken);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.pill.on {
+  background: var(--accent-soft);
+  color: var(--text);
+  border-color: transparent;
+}
+
+.sites .btn {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+
+.empty {
+  color: var(--text-dim);
+  padding: 18px;
+  text-align: center;
+  border: 1px dashed var(--border-strong);
+  border-radius: calc(var(--radius) - 2px);
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 16px;
+  margin: 0;
+}
+
+.keys dd {
+  margin: 0;
+}
+
+kbd {
+  font:
+    12px / 1 ui-monospace,
+    "SFMono-Regular",
+    Menlo,
+    monospace;
+  padding: 3px 7px;
+  border-radius: 5px;
+  border: 1px solid var(--border-strong);
+  background: var(--bg-sunken);
+}
+
+@media (max-width: 520px) {
+  .sites li {
+    grid-template-columns: 1fr auto;
+  }
+  .section-head {
+    flex-direction: column;
+  }
+}
