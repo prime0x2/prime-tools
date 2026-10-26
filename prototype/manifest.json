@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Prime Tools",
+  "version": "1.0",
+  "description": "Dim or blur a page, or just parts of it. Remembers whole-page settings per site.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Dim this page"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "optional_host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "prime-tools@prime0x2",
+      "strict_min_version": "121.0",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
+}
