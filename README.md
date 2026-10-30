@@ -3,7 +3,7 @@
   <img src="docs/banners/hero-light.png" alt="Prime Tools: dim, blur or hide any part of a web page. Share your screen, not your secrets." width="100%">
 </picture>
 
-[![CI](https://github.com/prime0x2/prime-tools/actions/workflows/ci.yml/badge.svg)](https://github.com/prime0x2/prime-tools/actions/workflows/ci.yml)
+[![CI](https://github.com/prime0x2/prime-tools/actions/workflows/ci.yml/badge.svg)](https://github.com/prime0x2/prime-tools/actions/workflows/ci.yml) [![Firefox Add-ons](https://img.shields.io/amo/v/prime-tools?label=Firefox%20Add-ons&color=dc5b38)](https://addons.mozilla.org/en-US/firefox/addon/prime-tools/)
 
 Prime Tools is a small Chrome and Firefox extension for the moments a page shows more than you want it to: screen-sharing a dashboard with keys on it, streaming with your inbox open, or reading a blinding white page at night.
 
@@ -18,7 +18,7 @@ Prime Tools is a small Chrome and Firefox extension for the moments a page shows
 ## Install
 
 - **Chrome Web Store:** _link after approval_
-- **Firefox Add-ons:** _link after approval_
+- **Firefox Add-ons:** [addons.mozilla.org/firefox/addon/prime-tools](https://addons.mozilla.org/en-US/firefox/addon/prime-tools/)
 
 ### Unpacked (before store approval)
 
